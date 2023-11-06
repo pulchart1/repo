@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo s animovaným kruhem</title>
+   
+</head>
+<body>
+    <svg width="500" height="500">
+        
+        <circle cx="170" cy="173" r="170" stroke="black" stroke-width="3" fill="grey">
+            <animate attributeName="fill" values="grey; #3498db; grey" dur="2s" repeatCount="indefinite" />
+        </circle>
+        <polygon points="30,270 100,130 170,270" fill="#000000" />
+        <polygon points="170,270 240,130 310,270" fill="#000000" />
+        <polygon points="100,130 240,130 170,4" fill="#000000" />
+        <text x="172" y="197" text-anchor="middle" font-family="Helvetica Neue" font-size="35" fill="#000000">PE</text>
+        <text x="180" y="370" text-anchor="middle" font-family="Helvetica Neue" font-size="35" fill="#000000">Pulchart Enterprises</text>
+    </svg>
+</body>
+</html>

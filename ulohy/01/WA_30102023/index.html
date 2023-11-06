@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulář</title>
+    <style>
+        label {
+            width: 250px;
+            display: inline-table;
+            vertical-align: middle;
+        }
+    
+        input[type="text"],
+        input[type="date"],
+        input[type="radio"],
+        input[type="checkbox"],
+        textarea,
+        input[type="file"] {
+            width: 75%;
+        }
+    
+        input[required] {
+            border: 1px solid red;
+        }
+        label.btn-radio{
+            display:table-cell;
+        }
+    
+        label:after {
+            content: ":";
+        }
+    
+        input[type="submit"] {
+            width: 100%;
+        }
+    
+        table {
+            width: 100%;
+        }
+    
+        form {
+            width: 700px;
+            border: 1px solid rgb(5, 5, 5);
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Anketní Formulář</h1>
+    <form action="http://jecna.lmsoft.cz/form.php" method="POST">
+        <table>
+            <tr>
+                <td><label for="fname">Jmeno</label></td>
+                <td><input type="text" id="fname" name="fname" required></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Příjmení</label></td>
+                <td><input type="text" id="lname" name="lname" required></td>
+            </tr>
+            <tr>
+                <td><label for="pohlavi">Pohlaví</label></td>
+                <td>
+                    <label for="muz">Muž</label>
+                    <input type="radio" id="muz" name="pohlavi" value="Muz" required>
+                    <label for="zena">Žena</label>
+                    <input type="radio" id="zena" name="pohlavi" value="Zena" required>
+                    <label for="jine">Jiné</label>
+                    <input type="radio" id="jine" name="pohlavi" value="Jine" required>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label for="dob"> Vaše datum narození</label></td>
+                <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+            <tr>
+                <td><label for="vzdlabel">Dosažené vzdělání</label></td>
+                <td>
+                    <label for="vzd1"> Základní škola</label>
+                    <input type="checkbox" id="vzd1" name="vzd" value="zakladniskola"><br>
+                    <label for="vzd2"> Střední škola</label>
+                    <input type="checkbox" id="vzd2" name="vzd" value="stredniskola"><br>
+                    <label for="vzd3"> Vysoká škola (bakalářský titul)</label>
+                    <input type="checkbox" id="vzd3" name="vzd" value="vysokaskolab"><br>
+                    <label for="vzd4"> Vysoká škola (magisterský titul)</label>
+                    <input type="checkbox" id="vzd4" name="vzd" value="vysokaskolam"><br>
+                    <label for="vzd5"> Doktorské studium</label>
+                    <input type="checkbox" id="vzd5" name="vzd" value="doktorskestudium"><br>
+                </td>
+            </tr>
+            
+            
+            </tr>
+            <tr>
+                <td><label for="message">Názor</label></td>
+                <td><textarea name="message" rows="10" cols="30">Popište sebe v pár větách(nepovinné)</textarea></td>
+            </tr>
+            <tr>
+                <td><label for="myFile">Popřipadě vyberte textový soubor</label></td>
+                <td><input type="file" id="myFile" name="filename" accept=".txt"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

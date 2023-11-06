@@ -1,0 +1,42 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #181616;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+section {
+    margin: 80px;
+}
+
+ul {
+    list-style: disc;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.obrazek1{
+    width: 300px;
+    height: 200px;
+}
+
+.obrazek2{
+    width: 300px;
+    height: 200px;
+}
