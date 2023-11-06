@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>C3a</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>C3a</h1>
+        <h4>Třída elektrotechnické školy v Ječné</h4>
+    </header>
+    <section>
+        <h2>Kontakt</h2>
+        <p>Můžete nás kontaktovat prostřednictvím tohoto formuláře:</p>
+        <form action="zpracovani_formulare.php" method="post">
+            <label for="jmeno">Jméno:</label>
+            <input type="text" id="jmeno" name="jmeno" required>
+            <br>
+    
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+    
+            <label for="zprava">Zpráva:</label>
+            <textarea id="zprava" name="zprava" rows="4" required></textarea>
+            <br>
+    
+            <input type="submit" value="Odeslat">
+        </form>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2023 C3a</p>
+    </footer>
+</body>
+</html>
