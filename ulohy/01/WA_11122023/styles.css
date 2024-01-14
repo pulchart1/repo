@@ -1,5 +1,5 @@
 header {
-    background-color: rgb(121, 121, 255);
+    background-color: rgb(22, 93, 224);
     height: 70px;
     width: 100%;
     display: flex;
@@ -19,7 +19,15 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
-
+.searchButton{
+    width:50px;
+    height: 50px;
+    margin-left: 0px;
+    background-color: #7ea7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .boxOne {
@@ -84,7 +92,13 @@ aside {
     color: white;
 }
 .searchContainer {
-   position: relative;
+   margin: 0;
+   width: auto;
+   height: auto;
+   float: right;
+   display: flex;
+   align-self: center;
+   justify-content: center;
     
 }
 
@@ -127,6 +141,7 @@ footer {
 #menu {
     list-style: none;
     display: flex;
+    
 }
 
 #menu li a {
@@ -134,15 +149,19 @@ footer {
     color: white;
     font-size: 20px;
     padding: 10px;
+    background-color: #7ea7ff;
+   
 }
 ul #menu {
     list-style: none;
     padding: 0;
     margin: 0;
+    
 }
 
 ul #menu li {
     margin-bottom: 10px;
+    
 }
 
 ul #menu li a {
@@ -172,6 +191,11 @@ ul #menu li a {
     .centeredDiv{
         width: 100%;
        }
+       
+       .searchButton{
+      display: none;
+    }
+       
        .centeredDiv2{
         width:90%
        }
@@ -197,9 +221,13 @@ ul #menu li a {
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        background-color: black;
+        background-color: #7ea7ff;
         
         
+    }
+    #menu li a {
+       
+        background-color: none;
     }
     .searchContainer{
         background-color: lightblue;
@@ -225,7 +253,7 @@ ul #menu li a {
             
         }
         aside{
-            width:94%;
+            width:93.8%;
             margin: 0;
             margin-top: 20px;
             height: 200px;
@@ -243,10 +271,14 @@ ul #menu li a {
     .centeredDiv{
         width: 100%;
        }
+       .searchButton{
+        display: none;
+      }
        .hamburger{
         display: block;
         
        }
+       
        .hamburger.active .bar:nth-child(2){
         opacity: 0;
         
@@ -266,9 +298,13 @@ ul #menu li a {
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        background-color: black;
+        background-color: #7ea7ff;
         
         
+    }
+    #menu li a {
+       
+        background-color: none;
     }
     .searchContainer{
         background-color: lightblue;
@@ -296,31 +332,13 @@ ul #menu li a {
     }
 
     aside {
-        width: 96.3%;
+        width: 96%;
         margin: 0;
         margin-top: 20px;
         height: 170px;
     }
 
-    .boxFooter:nth-child(2){
-        flex-grow: 2;
-     
-    }
-    .boxFooter:first-child{
-        flex-grow: 2;
-    }
-
     
-    .boxFooter:nth-child(2) {
-       flex-grow: 2;
-    }.boxFooter:first-child() {
-        flex-grow: 2;
-     }
-     
-    
-    .centeredDiv2:nth-child(2) {
-       flex-grow: 2;
-    }
     .centeredDiv2 {
         display: flex;
         flex-wrap: wrap;
@@ -331,6 +349,7 @@ ul #menu li a {
         width: 100%; 
         margin: 5px;  
         text-align: center;
+        height: 15vh;
     }
     
     
@@ -343,6 +362,9 @@ ul #menu li a {
     .centeredDiv{
         width: 100%;
        }
+       .searchButton{
+        display: none;
+      }
        .hamburger{
         display: block;
         
@@ -366,9 +388,13 @@ ul #menu li a {
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        background-color: black;
+        background-color: #7ea7ff;
         
         
+    }
+    #menu li a {
+       
+        background-color: none;
     }
     .searchContainer{
         background-color: lightblue;
@@ -397,7 +423,7 @@ ul #menu li a {
     }
 
     aside {
-        width: 97.3%;
+        width: 97%;
         margin: 0;
         margin-top: 20px;
         height: 170px;
@@ -411,6 +437,7 @@ ul #menu li a {
     
     .boxFooter {
         width: 100%; 
+        height: 15vh;
         margin: 5px;  
         text-align: center;
     }
